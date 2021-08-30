@@ -16,6 +16,11 @@ const contact = () => {
         <div className="contact">
           <EmailForm />
         </div>
+        <div className="address">
+          <h4>RaceCity Comics </h4>
+          <h4>PO Box 784</h4>
+          <h4>Harrisburg NC 28075</h4>
+        </div>
       </Jumbotron>
     );
 }
