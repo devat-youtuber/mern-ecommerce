@@ -42,7 +42,7 @@
     color: white;
     margin-top: 10px;
     padding: 10px 25px;
-    display: inline-block;
+    /* display: inline-block; */
     text-transform: uppercase;
     letter-spacing: 2px;
 }
