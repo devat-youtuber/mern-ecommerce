@@ -220,8 +220,8 @@ margin-right: 32px;
     
   }
   .cart {
-    
-    height: 85vh;
+    display: flex;
+    height: 155vh;
   }
 }
 
