@@ -4,11 +4,11 @@ import Image from "react-image-enlarger";
 const SingleSource = ({ src }) => {
   const [zoomed, setZoomed] = React.useState(false);
 
-  let style = {
-    width: "350ox",
-    height: "350px",
+  // let style = {
+  //   width: "350ox",
+  //   height: "350px",
     
-  };
+  // };
 
   return (
     <div className="zoom3">

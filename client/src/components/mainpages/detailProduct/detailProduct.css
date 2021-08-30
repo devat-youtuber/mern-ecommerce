@@ -1,5 +1,5 @@
 .detail{
-    width: 100%;
+    
     display: flex;
     justify-content: space-around;
     flex-wrap: wrap;
@@ -7,8 +7,8 @@
     font-size: 150%;
 }
 .detail img{
-    max-width: 450px;
-    width: 100%;
+    max-width: 550px;
+    height: 350px;
     margin: 20px;
     
     object-fit: cover;
@@ -16,6 +16,7 @@
 }
 .box-detail{
     max-width: 500px;
+    height:auto;
     width: 100%;
     margin: 5px 20px;
 }
@@ -36,6 +37,7 @@
     opacity: 0.8;
 }
 .box-detail .cart{
+    
     background: #333;
     color: white;
     margin-top: 10px;

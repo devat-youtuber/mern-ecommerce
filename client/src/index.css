@@ -19,7 +19,7 @@ code {
     monospace;
 }
 .App{
-  max-width: 1430px;
+  max-width: 1830px;
   min-height: 100vh;
   margin: 0 auto;
   padding: 0 20px;
@@ -65,6 +65,16 @@ button{
   
  }
 
+ .copy{
+   display: flex;
+   justify-content: center;
+  margin: 0 auto;
+ }
+
+ .copy a{
+   color:#3f51b5
+ }
+
 /* ---------------- Header ------------ */
 @import url("./components/headers/header.css");
 
@@ -97,8 +107,10 @@ button{
 /* ----------------- Responsive ------------------ */
 @media (max-width: 820px){
   header .logo{
-    min-width: 115px;
-    flex: none;
+    min-width: 100%;
+    text-align: center;
+    
+    /* flex: none; */
   }
   header ul{
    padding: 10px 0;
@@ -107,17 +119,17 @@ button{
 @media (max-width: 720px){
   header ul{
    position: fixed;
-   top:0;
-   left: -100%;
-   width: 100%;
-   height: 100vh;
-   background: white;
+   top:-8.5px;
+   right: -100%;
+   width: 50%;
+   height: 30vh;
+   background: #3f51b5;
    display: flex;
    flex-direction: column;
-   justify-content: space-around;
+   justify-content: space-between;
    align-items: center;
    opacity: 0.98;
-   z-index: 99;
+   z-index: 100;
    transition: 0.5s ease-in;
   }
   header .menu{
@@ -143,6 +155,7 @@ button{
 @media (max-width: 500px){
   .App{
     padding: 0 10px;
+    height:auto;
   }
   .detail{
     font-size: 100%;
@@ -167,6 +180,48 @@ button{
   }
   .create_product .upload{
     margin: 20px 0;
+  }
+  .jumbotron {
+    width: 100%;
+  }
+  .contact {
+    width: 100%;
+  }
+  .Contact-form{
+    width: 100%;
+  }
+  .pics{
+    margin:0 20px 0 ;
+    justify-items: center;
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(115px, 1fr));
+  }
+  .zoom3 {
+    display:flex;
+margin-right: 32px;
+    width: 40%;
+    
+  }
+  .detail{
+    
+    display: flex;
+    justify-content:space-evenly;
+    
+  }
+  .detail img {
+    max-height: 250px;
+    display: flex;
+    
+    margin: 0 auto;
+    
+    
+
+    
+    
+  }
+  .cart {
+    
+    height: 85vh;
   }
 }
 

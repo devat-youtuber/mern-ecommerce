@@ -3,7 +3,7 @@ import React from "react";
 import * as emailjs from "emailjs-com";
 // 'service_68tukea', 'template_uyojpy3', e.target, 'user_ZwzQz54DI5UoSAiLTA0Z7'
 
-import { Button, Form, FormGroup, Modal, Image } from "react-bootstrap";
+import { Button, Form, FormGroup, Modal } from "react-bootstrap";
 
 class Email_Form extends React.Component {
   constructor(props, context) {

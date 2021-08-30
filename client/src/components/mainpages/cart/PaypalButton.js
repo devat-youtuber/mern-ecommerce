@@ -1,3 +1,20 @@
+// App.js
+// import { PayPalScriptProvider, PayPalButtons } from "@paypal/react-paypal-js";
+// import React from 'react';
+// export default function App() {
+//   return (
+//     <PayPalScriptProvider
+//       options={{
+//         "client-id":
+//           "AaXxoyP3B92k1UtzBcHXywN5UqGpEEXUnuxf8nAqN7Av4Uo1n7gARhwzI0l5eI0qEgH7rmisfZKBxrcn&disable-funding=credit",
+       
+//       }}
+//     >
+//       <PayPalButtons style={{ layout: "vertical" }} />
+//     </PayPalScriptProvider>
+//   );
+// }
+
 import React from "react";
 import PaypalExpressBtn from "react-paypal-express-checkout";
 
@@ -41,7 +58,7 @@ export default class PaypalButton extends React.Component {
 
     // NB. You can also have many Paypal express checkout buttons on page, just pass in the correct amount and they will work!
     let style = {
-      size: "large",
+      size: "medium",
       color: "blue",
       shape: "rect",
       label: "checkout",
@@ -62,3 +79,28 @@ export default class PaypalButton extends React.Component {
     );
   }
 }
+
+// import { PayPalButton } from "react-paypal-button-v2";
+// import   React  from "react";
+
+// const Example = () => {
+
+//     return (
+//       <PayPalButton
+//         amount="0.01"
+//         // shippingPreference="NO_SHIPPING" // default is "GET_FROM_FILE"
+//         onSuccess={(details, data) => {
+//           alert("Transaction completed by " + details.payer.name.given_name);
+
+//           // OPTIONAL: Call your server to save the transaction
+//           return fetch("/paypal-transaction-complete", {
+//             method: "post",
+//             body: JSON.stringify({
+//               orderID: data.orderID
+//             })
+//           });
+//         }}
+//       />
+//     );
+//   }
+// export default Example

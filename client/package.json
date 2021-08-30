@@ -15,6 +15,7 @@
     "react-gesture-responder": "^2.1.0",
     "react-image-enlarger": "^1.1.0",
     "react-modal-image": "^2.5.0",
+    "react-paypal-button-v2": "^2.6.3",
     "react-paypal-express-checkout": "^1.0.5",
     "react-router-dom": "^5.2.0",
     "react-scripts": "3.4.3",
@@ -41,5 +42,5 @@
       "last 1 safari version"
     ]
   },
-  "proxy": "http://localhost:5000"
+  "proxy": "https://localhost:5000"
 }

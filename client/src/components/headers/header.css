@@ -15,7 +15,8 @@ header .logo{
 }
 header a{
     text-transform: uppercase;
-    color: white;
+    font-weight: bold;
+    color: rgb(0, 0, 0);
     margin-left: 10px;
 }
 header ul li{

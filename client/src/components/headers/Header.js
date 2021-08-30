@@ -41,7 +41,8 @@ function Header() {
 
 
     const styleMenu = {
-        left: menu ? 0 : "-100%"
+        right: menu ? 0 : "-105%",
+        
     }
 
     return (
