@@ -59,36 +59,44 @@ function Products() {
 
     if(loading) return <div><Loading /></div>
     return (
-        <>
-             <Jumbotron>
-        <div>
-          <img className="store" src="images/newDustin2.jpg" alt=""/>
-                </div>
-                </Jumbotron>
+      <>
+        <Jumbotron>
+          <div>
+            <img
+              className="store"
+              src="https://res.cloudinary.com/qb1968/image/upload/v1630301722/gvohn5azakytwhlccuk3.jpg"
+              alt=""
+            />
+          </div>
+        </Jumbotron>
         <Filters />
-        
-        {
-            isAdmin && 
-            <div className="delete-all">
-                <span>Select all</span>
-                <input type="checkbox" checked={isCheck} onChange={checkAll} />
-                <button onClick={deleteAll}>Delete ALL</button>
-            </div>
-        }
+
+        {isAdmin && (
+          <div className="delete-all">
+            <span>Select all</span>
+            <input type="checkbox" checked={isCheck} onChange={checkAll} />
+            <button onClick={deleteAll}>Delete ALL</button>
+          </div>
+        )}
 
         <div className="products">
-            {
-                products.map(product => {
-                    return <ProductItem key={product._id} product={product}
-                    isAdmin={isAdmin} deleteProduct={deleteProduct} handleCheck={handleCheck} />
-                })
-            } 
+          {products.map((product) => {
+            return (
+              <ProductItem
+                key={product._id}
+                product={product}
+                isAdmin={isAdmin}
+                deleteProduct={deleteProduct}
+                handleCheck={handleCheck}
+              />
+            );
+          })}
         </div>
 
         <LoadMore />
         {products.length === 0 && <Loading />}
-        </>
-    )
+      </>
+    );
 }
 
 export default Products

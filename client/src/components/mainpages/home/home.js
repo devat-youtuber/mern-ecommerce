@@ -24,7 +24,11 @@ const images = [
     return (
       <Jumbotron>
         <div>
-          <img className="store" src="images/newDustin2.jpg" alt=""/>
+          <img
+            className="store"
+            src="https://res.cloudinary.com/qb1968/image/upload/v1630301722/gvohn5azakytwhlccuk3.jpg"
+            alt=""
+          />
         </div>
         <div className="press">
           <h1>Pressing Services</h1>
@@ -45,12 +49,15 @@ const images = [
         <div className="button">
           <h2 className="form-text">
             Interested download the form to get started
-                </h2>
-                
-          <a href="/images/comics.pdf" target="_blank" rel="noopener noreferrer">
+          </h2>
+
+          <a
+            href="/images/comics.pdf"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
             <button className="btn">Download Form</button>
-                </a>
-                
+          </a>
         </div>
       </Jumbotron>
     );

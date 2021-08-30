@@ -4,16 +4,19 @@ import EmailForm from './email'
 
 const contact = () => {
     return (
-         <Jumbotron>
+      <Jumbotron>
         <div>
-          <img className="store" src="images/newDustin2.jpg" alt=""/>
+          <img
+            className="store"
+            src="https://res.cloudinary.com/qb1968/image/upload/v1630301722/gvohn5azakytwhlccuk3.jpg"
+            alt=""
+          />
         </div>
-      
+
         <div className="contact">
           <EmailForm />
-    
-            </div>
-            </Jumbotron>
+        </div>
+      </Jumbotron>
     );
 }
 
