@@ -7,10 +7,10 @@
     font-size: 150%;
 }
 .detail img{
-    max-width: 400px;
+    max-width: 450px;
     width: 100%;
     margin: 20px;
-    height: 450px;
+    
     object-fit: cover;
     display: block;
 }

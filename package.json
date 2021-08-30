@@ -26,7 +26,8 @@
     "express": "^4.17.1",
     "express-fileupload": "^1.2.0",
     "jsonwebtoken": "^8.5.1",
-    "mongoose": "^5.10.1"
+    "mongoose": "^5.10.1",
+    "react-medium-image-zoom": "^4.3.5"
   },
   "devDependencies": {
     "nodemon": "^2.0.4"

@@ -1,0 +1,37 @@
+.store{
+    width: 100%;
+    height: 50vh;
+}
+
+.pics {
+    display: flex;
+}
+
+.click{
+    display: flex;
+    justify-content: center;
+}
+
+.press {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+.press2 {
+    display: flex;
+    flex-direction: column;
+    font-size:larger;
+    text-align: center;
+}
+
+.button{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+}
+
+.btn {
+    background-color:#3f51b5;
+    border-radius: 3px;
+}

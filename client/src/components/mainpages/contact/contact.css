@@ -1,0 +1,72 @@
+.contact{
+    height:auto !important;
+}
+
+.Contact-form {
+    display: flex;
+    flex-direction: column;
+    margin: 0 auto;
+    text-align: center;
+    padding-bottom: 1%;
+    background-color: #3f51b581;
+    width: 55%;
+   
+}
+
+.contact-form-header {
+    font-size: 2.5rem;
+    padding: 1%;
+    font-family: 'Raleway', sans-serif;
+    color: black;
+}
+
+.contact_input {
+    padding-left: 10%;
+    padding-right: 10%;
+    
+}
+
+.contact_input_text1 {
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 1.5rem;
+    border-radius: 5%;
+    text-align: center;
+    background: transparent;
+    color: white;
+    min-height: 6.5vh;
+    width: 100%;
+}
+
+.contact_input_text {
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 1.5rem;
+    border-radius: 5%;
+    text-align: center;
+    background: transparent;
+    color: white;
+    min-height: 6.5vh;
+}
+
+.contact_success_modal_body {
+    text-align: center;
+    background: #090909;
+    color: aliceblue;
+}
+
+.contact_success_modal_img {
+    height: 15vh;
+    padding-bottom: 3%;
+}
+
+button.contact-email-text-btn:hover {
+    background: #3f51b5;
+    color: black;
+}
+
+button.contact-email-text-btn{
+    width: 20%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto;
+}

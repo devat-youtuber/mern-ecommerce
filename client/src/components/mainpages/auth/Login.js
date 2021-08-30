@@ -26,6 +26,7 @@ function Login() {
     }
 
     return (
+        
         <div className="login-page">
             <form onSubmit={loginSubmit}>
                 <h2>Login</h2>
@@ -40,8 +41,11 @@ function Login() {
                     <Link to="/register">Register</Link>
                 </div>
             </form>
-        </div>
-    )
+           
+        
+        <div>
+            <img className="portal" src='/images/sheild2.gif' alt=""/></div></div>
+    ) 
 }
 
 export default Login

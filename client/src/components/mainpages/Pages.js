@@ -10,8 +10,11 @@ import Cart from './cart/Cart'
 import NotFound from './utils/not_found/NotFound'
 import Categories from './categories/Categories'
 import CreateProduct from './createProduct/CreateProduct'
+import Home from './home/home'
+
 
 import {GlobalState} from '../../GlobalState'
+import contact from './contact/contact'
 
 
 function Pages() {
@@ -23,6 +26,9 @@ function Pages() {
     return (
         <Switch>
             <Route path="/" exact component={Products} />
+            <Route path="/services" exact component={Home}/>
+            <Route path="/contact" exact component={contact}/>
+            
             <Route path="/detail/:id" exact component={DetailProduct} />
 
             <Route path="/login" exact component={isLogged ? NotFound : Login} />

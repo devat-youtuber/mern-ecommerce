@@ -7,13 +7,16 @@ header{
     justify-content: space-around;
     align-items: center;
     border-bottom: 1px solid #ddd;
+    background-color: #3f51b5;
 }
 header .logo{
     flex: 1;
+    
 }
 header a{
     text-transform: uppercase;
-    color: #555;
+    color: white;
+    margin-left: 10px;
 }
 header ul li{
     display: inline-block;

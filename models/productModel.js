@@ -1,12 +1,12 @@
 const mongoose = require('mongoose')
-
+const Object2 = Object
 
 const productSchema = new mongoose.Schema({
     product_id:{
         type: String,
         unique: true,
         trim: true,
-        required: true
+        required: false
     },
     title:{
         type: String,
@@ -22,14 +22,17 @@ const productSchema = new mongoose.Schema({
         type: String,
         required: true
     },
-    content:{
-        type: String,
-        required: true
-    },
+    
     images:{
         type: Object,
         required: true
     },
+
+    images2:{
+        type: Object2,
+        required: true
+    },
+   
     category:{
         type: String,
         required: true
