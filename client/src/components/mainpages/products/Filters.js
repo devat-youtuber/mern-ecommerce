@@ -41,7 +41,7 @@ function Filters() {
                     <option value='sort=oldest'>Oldest</option>
                     <option value='sort=-sold'>Best sales</option>
                     <option value='sort=-price'>Price: Hight-Low</option>
-                    <option value='sort=price'>Price: Low-Hight</option>
+                    <option value='sort=price'>Price: Low-High</option>
                 </select>
             </div>
         </div>
