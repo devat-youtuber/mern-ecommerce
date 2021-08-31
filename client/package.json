@@ -42,5 +42,5 @@
       "last 1 safari version"
     ]
   },
-  "proxy": "https://localhost:5000"
+  "proxy": "https://racecity2-0.herokuapp.com/"
 }
