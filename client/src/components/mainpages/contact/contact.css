@@ -1,15 +1,17 @@
 .contact{
-    height:auto !important;
+    height:500px !important;
+    padding: 10px;
 }
 
 .Contact-form {
     display: flex;
     flex-direction: column;
-    margin: 0 auto;
+    margin: 0 auto 0;
     text-align: center;
     padding-bottom: 1%;
     background-color: #3f51b593;
     width: 60%;
+    
    
 }
 
@@ -47,7 +49,7 @@
     text-align: center;
     background: transparent;
     color: black;
-    min-height: 6.5vh;
+    min-height: 7.5vh;
     
     
     
@@ -57,6 +59,7 @@
     text-align: center;
     background: #090909;
     color: aliceblue;
+    
 }
 
 .contact_success_modal_img {
