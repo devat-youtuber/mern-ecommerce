@@ -47,7 +47,7 @@ const images = [
           ))}
         </div>
         <div className="button">
-          <h2 className="form-text">
+          <h2 className="form-button">
             Interested download the form to get started
           </h2>
 

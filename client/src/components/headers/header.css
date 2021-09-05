@@ -19,6 +19,9 @@ header a{
     color: rgb(0, 0, 0);
     margin-left: 10px;
 }
+ header ul li a:hover {
+   color:white;
+}
 header ul li{
     display: inline-block;
     opacity: 0.7;
@@ -26,6 +29,7 @@ header ul li{
 }
 header ul li:hover{
     opacity: 1;
+    
 }
 .menu{
     display: none;

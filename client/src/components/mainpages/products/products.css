@@ -36,7 +36,7 @@
 .filter_menu{
     width: 100%;
     min-height: 40px;
-    overflow: hidden;
+    overflow: visible !important;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -51,8 +51,9 @@
 }
 .filter_menu input{
     flex: 1;
-    margin: 0 10px;
+    margin: 0 20px;
 }
+
 
 /* -------------------- Load More --------------- */
 .load_more{

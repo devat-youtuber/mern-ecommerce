@@ -4,13 +4,13 @@ import React from 'react';
 const Copyright = () => {
     return (
       <div className="copy">
-        <h3>
+        <h5>
           {"Copyright @ "}{" "}
           <a href="https://thejonathanallison.com/home">
             Jonathan Allison {new Date().getFullYear()}
             {"."}
           </a>
-        </h3>
+        </h5>
       </div>
     );
 }

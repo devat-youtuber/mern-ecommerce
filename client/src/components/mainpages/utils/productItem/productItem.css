@@ -49,6 +49,9 @@
     letter-spacing: 2px;
     padding: 6px;
 }
+.row_btn a:hover{
+    color: black;
+}
 #btn_buy{
     background: #555;
     margin-right: 5px;

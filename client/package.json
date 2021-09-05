@@ -8,6 +8,7 @@
     "@testing-library/react": "^9.5.0",
     "@testing-library/user-event": "^7.2.1",
     "axios": "^0.20.0",
+    "bootstrap": "^5.1.0",
     "emailjs-com": "^3.2.0",
     "focus-trap-react": "^8.7.1",
     "react": "^16.13.1",

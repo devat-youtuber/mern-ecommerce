@@ -40,7 +40,7 @@ button{
 }
 
 .zoom{
- height: 50%;
+ 
     display: flex;
     justify-content: center;
     margin: 0 auto;
@@ -66,9 +66,10 @@ button{
  }
 
  .copy{
+   font-size:14px;
    display: flex;
    justify-content: center;
-  margin: 0 auto;
+
  }
 
  .copy a{

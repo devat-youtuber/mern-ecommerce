@@ -3,9 +3,7 @@ import { useParams, Link } from "react-router-dom";
 import { GlobalState } from "../../../GlobalState";
 import ProductItem from "../utils/productItem/ProductItem";
 import SingleSource2 from "../../SingleSource/SingleSource2";
-import Button from "react-bootstrap/Button";
-import Modal from "react-bootstrap/Modal"
-import Offer from '../Offer/offer'
+import { Button, Modal, ModalHeader, ModalBody, ModalFooter } from "reactstrap";
 import emailjs from 'emailjs-com';
 
 // import Modal from "../../modal/index"
@@ -16,16 +14,14 @@ function DetailProduct() {
   const [products] = state.productsAPI.products;
   const addCart = state.userAPI.addCart;
   const [detailProduct, setDetailProduct] = useState([]);
-  const [showModal, setShow] = useState(false);
+  
 
-  const handleClose = () => setShow(false);
-  const handleShow = () => setShow(true);
+  const [modal, setModal] = useState(false);
+
+  const toggle = () => setModal(!modal);
 
 
-  const triggerText = "Open form";
-  const onSubmit = (event) => {
-    event.preventDefault(event);
-  };
+  
   useEffect(() => {
     if (params.id) {
       products.forEach((product) => {
@@ -71,24 +67,12 @@ function DetailProduct() {
 
           <div
             className="d-flex align-items-center justify-content-center"
-            style={{ height: "15vh" }}
-          >
-            <Button variant="primary" size="lg" onClick={handleShow}>
-              Make Offer
-            </Button>
-          </div>
-          <Modal
-            className="d-flex align-items-center justify-content-center"
-            show={showModal}
-            onHide={handleClose}
-          >
-            <Modal.Header closeButton>
-              <Modal.Title className="d-flex align-items-center justify-content-center">
-                Make Offer
-              </Modal.Title>
-            </Modal.Header>
-           
-            <Modal.Body>
+            style={{ height: "10vh" }}
+          ></div>
+             <Button color="danger" onClick={toggle}>Make Offer</Button>
+      <Modal isOpen={modal} toggle={toggle} >
+        <ModalHeader toggle={toggle}>Offer Form</ModalHeader>
+        <ModalBody>
               <form className="contact-form" onSubmit={sendEmail}>
       
       <label>Name</label>
@@ -99,18 +83,14 @@ function DetailProduct() {
      <input type="subject" name="subject"value={detailProduct.title}/>
       <label>Offer</label>
       <textarea type="offer" name="offer" />
-      <input type="submit" value="Send" onClick={handleClose} />
+      <input type="submit" value="Send"  />
     </form>
-            </Modal.Body>
-            {/* <Modal.Footer>
-              <Button variant="secondary" onClick={handleClose}>
-                Close
-              </Button>
-              <Button variant="primary" onClick={handleClose}>
-                Save Changes
-              </Button>
-            </Modal.Footer> */}
-          </Modal>
+            </ModalBody>
+        <ModalFooter>
+          
+          <Button color="secondary" onClick={toggle}>Cancel</Button>
+        </ModalFooter>
+      </Modal>
         </div>
       </div>
 
