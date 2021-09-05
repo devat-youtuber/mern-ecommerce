@@ -2,7 +2,9 @@
     position: relative;
     border: 1px solid #ccc;
     transform: scaleY(0.98);
-    height:100%;
+    
+    text-align: center;
+   
 }
 .amount span{
     color: crimson;

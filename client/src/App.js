@@ -6,6 +6,7 @@ import MainPages from './components/mainpages/Pages'
 import Copyright from './components/mainpages/copyRight';
 
 
+
 function App() {
   return (
     <DataProvider>

@@ -15,8 +15,11 @@
     display: block;
 }
 .box-detail{
+    display: flex;
+    flex-direction: column;
+    align-items:center;
     max-width: 500px;
-    height:auto;
+    
     width: 100%;
     margin: 5px 20px;
 }
@@ -32,11 +35,13 @@
     font-weight: 2rem;
 }
 .box-detail p{
+    font-weight:bold;
     line-height: 1.5;
     margin: 10px 0;
     opacity: 0.8;
 }
 .box-detail .cart{
+    
     
     background: #333;
     color: white;
@@ -45,4 +50,42 @@
     /* display: inline-block; */
     text-transform: uppercase;
     letter-spacing: 2px;
+}
+
+.button{
+    font-size: 1.2rem;
+     height: 50px;
+     padding: 10px 25px;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    align-items: center;
+    background: #333;
+    color: white;
+    
+     transform: scaleY(0.98);
+}
+
+.nav-link{
+    color: white;
+}
+
+.contact-form{
+   display:flex;
+   flex-direction:column;
+   justify-content:center;
+   width:250px;
+    
+    
+}
+
+.modal-content{
+    display:flex;
+    align-items:center;
+}
+
+.modal-body{
+    
+    display:flex;
+    justify-content:center;
+    margin:0 auto;
 }

@@ -9,11 +9,13 @@
     "@testing-library/user-event": "^7.2.1",
     "axios": "^0.20.0",
     "emailjs-com": "^3.2.0",
+    "focus-trap-react": "^8.7.1",
     "react": "^16.13.1",
     "react-bootstrap": "^1.6.1",
     "react-dom": "^16.13.1",
     "react-gesture-responder": "^2.1.0",
     "react-image-enlarger": "^1.1.0",
+    "react-modal": "^3.14.3",
     "react-modal-image": "^2.5.0",
     "react-paypal-button-v2": "^2.6.3",
     "react-paypal-express-checkout": "^1.0.5",
@@ -42,5 +44,5 @@
       "last 1 safari version"
     ]
   },
-  "proxy": "https://localhost:5000"
+  "proxy": "http://localhost:5000"
 }

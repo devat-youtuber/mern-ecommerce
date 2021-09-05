@@ -11,6 +11,7 @@ import NotFound from './utils/not_found/NotFound'
 import Categories from './categories/Categories'
 import CreateProduct from './createProduct/CreateProduct'
 import Home from './home/home'
+import Offer from './Offer/offer'
 
 
 import {GlobalState} from '../../GlobalState'
@@ -27,7 +28,8 @@ function Pages() {
         <Switch>
             <Route path="/" exact component={Products} />
             <Route path="/services" exact component={Home}/>
-            <Route path="/contact" exact component={contact}/>
+            <Route path="/contact" exact component={contact} />
+            <Route path="/offer" exact component={Offer}/>
             
             <Route path="/detail/:id" exact component={DetailProduct} />
 
