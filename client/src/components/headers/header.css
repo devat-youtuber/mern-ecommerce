@@ -13,6 +13,9 @@ header .logo{
     flex: 1;
     
 }
+header .logo a:hover{
+    color:white;
+}
 header a{
     text-transform: uppercase;
     font-weight: bold;
