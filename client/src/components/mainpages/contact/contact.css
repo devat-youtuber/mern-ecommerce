@@ -2,6 +2,10 @@
     height:500px !important;
     padding: 10px;
 }
+.contact_input_text1{
+    height:500px !important;
+    padding: 10px;
+}
 
 .Contact-form {
     display: flex;
@@ -13,6 +17,24 @@
     width: 60%;
     
    
+}
+.contact-form1 {
+    display: flex;
+    flex-direction: column;
+    margin: 0 auto 0;
+    
+    text-align: center;
+    padding-bottom: 1%;
+    background-color: #3f51b593;
+    width: 50%;
+    
+   
+}
+
+.submit{
+    background-color: #3f51b593;
+    width:30%;
+    margin: 0 auto;
 }
 
 .contact-form-header {

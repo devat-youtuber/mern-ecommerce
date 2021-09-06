@@ -1,14 +1,14 @@
 .product_card{
     max-width: 500px;
     overflow: hidden;
-    /* height: 500px; */
+    height: 540px;
     padding: 15px;
     box-shadow: 0 0 15px #ddd;
     margin: 10px 0;
     position: relative;
 }
 
-.product_box h3{
+.product_box h5{
     width: 100%;
     text-align:center;
      text-overflow: ellipsis;

@@ -24,7 +24,7 @@ function ProductItem({product, isAdmin, deleteProduct, handleCheck}) {
         
 
         <div className="product_box">
-          <h3 title={product.title}>{product.title}</h3>
+          <h5 title={product.title}>{product.title}</h5>
          
           <p>{product.description}</p>
           <span>${product.price}</span>

@@ -2,7 +2,8 @@ import React from 'react';
 ;
 
 const Copyright = () => {
-    return (
+  return (
+  
       <div className="copy">
         <h5>
           {"Copyright @ "}{" "}
@@ -12,6 +13,7 @@ const Copyright = () => {
           </a>
         </h5>
       </div>
+      
     );
 }
 export default Copyright;

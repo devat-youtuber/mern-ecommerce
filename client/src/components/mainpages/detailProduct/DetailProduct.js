@@ -17,8 +17,7 @@ function DetailProduct() {
   
 
   const [modal, setModal] = useState(false);
- const [nestedModal, setNestedModal] = useState(false);
- const [closeAll, setCloseAll] = useState(false);
+ 
   const toggle = () => setModal(!modal);
 
 

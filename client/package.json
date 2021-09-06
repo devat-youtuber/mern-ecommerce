@@ -22,7 +22,8 @@
     "react-paypal-express-checkout": "^1.0.5",
     "react-router-dom": "^5.2.0",
     "react-scripts": "3.4.3",
-    "reactstrap": "^8.9.0"
+    "reactstrap": "^8.9.0",
+    "sweetalert2": "^11.1.4"
   },
   "scripts": {
     "start": "react-scripts start",
