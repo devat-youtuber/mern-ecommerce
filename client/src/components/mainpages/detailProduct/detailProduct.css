@@ -106,3 +106,11 @@ a.cart:hover{
 button.btn.btn-danger:hover{
     color:black;
 }
+.subject1{
+    text-transform: uppercase;
+    font-size: small;
+}
+.send{
+    background-color:#3f51b5;
+    color:white;
+}

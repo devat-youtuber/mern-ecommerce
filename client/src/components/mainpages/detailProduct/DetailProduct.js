@@ -5,6 +5,7 @@ import ProductItem from "../utils/productItem/ProductItem";
 import SingleSource2 from "../../SingleSource/SingleSource2";
 import { Button, Modal, ModalHeader, ModalBody, ModalFooter } from "reactstrap";
 import emailjs from 'emailjs-com';
+import Swal from 'sweetalert2'
 
 // import Modal from "../../modal/index"
 
@@ -35,14 +36,33 @@ function DetailProduct() {
   const sendEmail = (e) => {
     e.preventDefault();
 
-    emailjs.sendForm("service_68tukea","template_t046vdr", e.target, 'user_ZwzQz54DI5UoSAiLTA0Z7')
+    emailjs
+      .sendForm(
+        "service_68tukea",
+        "template_t046vdr",
+        e.target,
+        "user_ZwzQz54DI5UoSAiLTA0Z7"
+      )
 
-      .then((result) => {
+      .then(
+        (result) => {
           console.log(result.text);
-      }, (error) => {
+          Swal.fire({
+            icon: "success",
+            title: "Message Sent Successfully",
+          });
+        },
+        (error) => {
           console.log(error.text);
-      });
-    }
+          Swal.fire({
+            icon: "error",
+            title: "Ooops, something went wrong",
+            text: error.text,
+          });
+        }
+      );
+    e.target.reset();
+  };
   return (
     <>
       <div className="detail">
@@ -80,15 +100,15 @@ function DetailProduct() {
       <label>Email</label>
       <input type="email" name="from_email" />
      <label>Subject</label>
-     <input type="subject" name="subject"value={detailProduct.title}/>
+     <input className='subject1' type="subject" name="subject"value={detailProduct.title} />
       <label>Offer</label>
       <textarea type="offer" name="offer" />
-      <input type="submit" value="Send"  />
+      <input className="send" type="submit" value="Send"  />
     </form>
             </ModalBody>
         <ModalFooter>
           
-          <Button color="secondary" onClick={toggle}>Cancel</Button>
+          <Button color="secondary" onClick={toggle}>Close</Button>
         </ModalFooter>
       </Modal>
         </div>
