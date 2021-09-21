@@ -87,7 +87,7 @@ function DetailProduct() {
 
           <div
             className="d-flex align-items-center justify-content-center"
-            style={{ height: "10vh" }}
+            style={{ height: "1vh" }}
           ></div>
              <Button color="primary" onClick={toggle}>Make Offer</Button>
       <Modal isOpen={modal} toggle={toggle} >
