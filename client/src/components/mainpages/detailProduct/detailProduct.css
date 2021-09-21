@@ -99,12 +99,18 @@ a.cart {
     text-decoration: none;
 }
 a.cart:hover{
-    color: white;
+    color: black;
     
 }
 
-button.btn.btn-danger:hover{
+button.btn.btn-primary{
+    background-color: #3f51b5;
+}
+
+button.btn.btn-primary:hover{
     color:black;
+    background-color: #3f51b5;
+     
 }
 .subject1{
     text-transform: uppercase;
@@ -113,4 +119,7 @@ button.btn.btn-danger:hover{
 .send{
     background-color:#3f51b5;
     color:white;
+}
+.detail.cart{
+    height:175vh;
 }

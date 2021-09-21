@@ -21,6 +21,7 @@ header a{
     font-weight: bold;
     color: rgb(0, 0, 0);
     margin-left: 10px;
+    text-decoration: none;
 }
  header ul li a:hover {
    color:white;

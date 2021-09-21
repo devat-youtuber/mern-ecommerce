@@ -2,7 +2,7 @@
     position: relative;
     border: 1px solid #ccc;
     transform: scaleY(0.98);
-    
+    height:auto;
     text-align: center;
    
 }

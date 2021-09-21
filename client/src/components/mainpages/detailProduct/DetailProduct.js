@@ -76,7 +76,7 @@ function DetailProduct() {
           <span>$ {detailProduct.price}</span>
           <p>{detailProduct.description}</p>
           <p>{detailProduct.content}</p>
-          <p>Sold: {detailProduct.sold}</p>
+          {/* <p>Sold: {detailProduct.sold}</p> */}
           <Link
             to="/cart"
             className="cart"
@@ -89,7 +89,7 @@ function DetailProduct() {
             className="d-flex align-items-center justify-content-center"
             style={{ height: "10vh" }}
           ></div>
-             <Button color="danger" onClick={toggle}>Make Offer</Button>
+             <Button color="primary" onClick={toggle}>Make Offer</Button>
       <Modal isOpen={modal} toggle={toggle} >
         <ModalHeader toggle={toggle}>Offer Form</ModalHeader>
         <ModalBody>
