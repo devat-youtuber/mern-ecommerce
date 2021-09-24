@@ -22,6 +22,7 @@ const productSchema = new mongoose.Schema({
         type: Number,
         trim: true,
         required: false,
+        default: 15
        
     },
     description:{

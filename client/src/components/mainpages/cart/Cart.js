@@ -3,17 +3,26 @@ import { GlobalState } from "../../../GlobalState";
 import axios from "axios";
 import PayPalButton from "./PaypalButton";
 
+const shipping1 = [{ price: 15 }];
+
 function Cart() {
+  
   const state = useContext(GlobalState);
   const [cart, setCart] = state.userAPI.cart;
   const [token] = state.token;
   const [total, setTotal] = useState(0);
+  const [cost, setCost] = useState(shipping1);
 
   useEffect(() => {
     const getTotal = () => {
+      
       const total = cart.reduce((prev, item) => {
+      //    if ( prev > 4 ) {
+      //  return prev + item.price *item.quantity + item.shipping
+      //    } else
+      //      if (prev <= 4)
         return prev + item.price * item.quantity;
-      }, 0);
+      }, 15);
 
       setTotal(total);
     };
@@ -110,20 +119,21 @@ function Cart() {
             <div className="delete" onClick={() => removeProduct(product._id)}>
               X
             </div>
-              </div>
+          </div>
+          <div className="shipping">
+            <p>Shipping:${product.shipping}</p>
+            <p>Add additional $15 per item if more than 4 items orderd</p>
+          </div>
           <div className="total">
-            <p>Add $15 for shipping to total (Up to 4 items)</p>
-            <h3>Total:${total}</h3>
             
-            <p>Pay with PayPal or Credit Card through PayPal</p>
-        <PayPalButton total={total} tranSuccess={tranSuccess} />
-      </div>
-    </div>
-          
-          
-      ))}
+            <h3>Total:${total}</h3>
 
-     </div>
+            <p>Pay with PayPal or Credit Card through PayPal</p>
+            <PayPalButton total={total} tranSuccess={tranSuccess} />
+          </div>
+        </div>
+      ))}
+    </div>
   );
 }
 
