@@ -74,7 +74,7 @@ function DetailProduct() {
             <h6>#id: {detailProduct.product_id}</h6>
           </div>
           <span>$ {detailProduct.price}</span>
-          <span>$ {detailProduct.shipping}</span>
+          
           <p>{detailProduct.description}</p>
           <p>{detailProduct.content}</p>
           {/* <p>Sold: {detailProduct.sold}</p> */}
