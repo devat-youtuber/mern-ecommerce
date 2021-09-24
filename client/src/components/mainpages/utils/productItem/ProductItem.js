@@ -28,6 +28,7 @@ function ProductItem({product, isAdmin, deleteProduct, handleCheck}) {
          
           <p>{product.description}</p>
           <span>${product.price}</span>
+          
         </div>
 
         <BtnRender product={product} deleteProduct={deleteProduct} />

@@ -18,6 +18,12 @@ const productSchema = new mongoose.Schema({
         trim: true,
         required: true
     },
+    shipping: {
+        type: Number,
+        trim: true,
+        required: false,
+       
+    },
     description:{
         type: String,
         required: true

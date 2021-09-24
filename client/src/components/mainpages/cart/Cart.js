@@ -111,8 +111,10 @@ function Cart() {
               X
             </div>
               </div>
-               <div className="total">
+          <div className="total">
+            <p>Add $15 for shipping to total (Up to 4 items)</p>
             <h3>Total:${total}</h3>
+            
             <p>Pay with PayPal or Credit Card through PayPal</p>
         <PayPalButton total={total} tranSuccess={tranSuccess} />
       </div>

@@ -91,9 +91,12 @@
 }
 
 a.cart {
-    width: 50%;
+    /* display:flex; */
+    text-align:center;
+    width: 28%;
+    height: 8.5%;
     border: 1px solid black;
-    border-radius:5px;
+    border-radius:2px;
     color: white;
     background-color: #3f51b5;
     text-decoration: none;
