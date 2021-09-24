@@ -120,12 +120,10 @@ function Cart() {
               X
             </div>
           </div>
-          <div className="shipping">
-            <p>Shipping:${product.shipping}</p>
-            <p>Add additional $15 per item if more than 4 items orderd</p>
-          </div>
+         
           <div className="total">
-            
+             <p>Shipping:${product.shipping}</p>
+            <p>Add additional $15 per item if more than 4 items orderd</p>
             <h3>Total:${total}</h3>
 
             <p>Pay with PayPal or Credit Card through PayPal</p>

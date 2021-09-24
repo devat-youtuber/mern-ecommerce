@@ -25,7 +25,7 @@
 }
 .total{
     margin: 0 auto;
-    height: 50px;
+    font-weight:bold;
     display: flex;
     flex-direction: column;
     
@@ -37,6 +37,3 @@
     color: black;
 }
 
-.shipping{
-    font-weight: bold;
-}
