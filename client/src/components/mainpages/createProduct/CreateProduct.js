@@ -79,34 +79,34 @@ function CreateProduct() {
             alert(err.response.data.msg)
         }
     }
-    const handleUpload2 = async e =>{
-        e.preventDefault()
-        try {
-            if(!isAdmin) return alert("You're not an admin")
-            const file = e.target.files[0]
+    // const handleUpload2 = async e =>{
+    //     e.preventDefault()
+    //     try {
+    //         if(!isAdmin) return alert("You're not an admin")
+    //         const file = e.target.files[0]
             
-            if(!file) return alert("File not exist.")
+    //         if(!file) return alert("File not exist.")
 
-            if(file.size > 5048 * 5048) // 1mb
-                return alert("Size too large!")
+    //         if(file.size > 5048 * 5048) // 1mb
+    //             return alert("Size too large!")
 
-            if(file.type !== 'image/jpeg' && file.type !== 'image/png' && file.type !== 'image/jpg') // 1mb
-                return alert("File format is incorrect.")
+    //         if(file.type !== 'image/jpeg' && file.type !== 'image/png' && file.type !== 'image/jpg') // 1mb
+    //             return alert("File format is incorrect.")
 
-            let formData = new FormData()
-            formData.append('file', file)
+    //         let formData = new FormData()
+    //         formData.append('file', file)
 
-            setLoading(true)
-            const res = await axios.post('/api/upload2', formData, {
-                headers: {'content-type': 'multipart/form-data', Authorization: token}
-            })
-            setLoading(false)
-            setImages2(res.data)
+    //         setLoading(true)
+    //         const res = await axios.post('/api/upload2', formData, {
+    //             headers: {'content-type': 'multipart/form-data', Authorization: token}
+    //         })
+    //         setLoading(false)
+    //         setImages2(res.data)
 
-        } catch (err) {
-            alert(err.response.data.msg)
-        }
-    }
+    //     } catch (err) {
+    //         alert(err.response.data.msg)
+    //     }
+    // }
 
     const handleDestroy = async () => {
         try {
@@ -174,7 +174,7 @@ function CreateProduct() {
             </div>
           )}
         </div>
-        <div className="upload2">
+        {/* <div className="upload2">
           <input
             type="file"
             name="file"
@@ -191,7 +191,7 @@ function CreateProduct() {
               <span onClick={handleDestroy}>X</span>
             </div>
           )}
-        </div>
+        </div> */}
 
         <form onSubmit={handleSubmit}>
           <div className="row">

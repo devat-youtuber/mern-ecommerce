@@ -7,10 +7,11 @@
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-;
+   
 }
 
  body{
+  background-color: #CDA4A4;
  }
 
 
