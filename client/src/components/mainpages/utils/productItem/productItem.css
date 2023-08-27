@@ -1,7 +1,7 @@
 .product_card{
     max-width: 500px;
     overflow: hidden;
-    height: 540px;
+    height: 600px;
     padding: 15px;
     box-shadow: 0 0 15px #ddd;
     margin: 10px 0;
@@ -31,7 +31,7 @@
     text-align:center;
     -webkit-box-orient: vertical;
     -webkit-line-clamp: 3;
-    height: 40px;
+    height: 80px;
      overflow: hidden; 
     color: #323232;
 }

@@ -67,7 +67,7 @@ function DetailProduct() {
     <>
       <div className="detail">
         <SingleSource2 src={detailProduct.images.url} alt="" />
-        <SingleSource2 src={detailProduct.images2.url} alt="" />
+       
         <div className="box-detail">
           <div className="row">
             <h2>{detailProduct.title}</h2>

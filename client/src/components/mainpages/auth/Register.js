@@ -63,9 +63,7 @@ function Register() {
             <Link to="/login">Login</Link>
           </div>
         </form>
-        <div>
-          <img className="portal" src="/images/sheild2.gif" alt=""/>
-        </div>
+       
       </div>
     );
 }

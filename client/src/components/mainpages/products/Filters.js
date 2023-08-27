@@ -17,7 +17,7 @@ function Filters() {
 
     return (
         <div className="filter_menu">
-            <div className="row">
+            <div className="row" >
                 <span>Filters: </span>
                 <select name="category" value={category} onChange={handleCategory} >
                     <option value=''>All Products</option>

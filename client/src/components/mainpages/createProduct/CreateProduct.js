@@ -133,7 +133,7 @@ function CreateProduct() {
         try {
             if(!isAdmin) return alert("You're not an admin")
             if (!images) return alert("No Image Upload")
-            if(!images2) return alert("No Image Upload");
+            // if(!images2) return alert("No Image Upload");
 
             if(onEdit){
                 await axios.put(`/api/products/${product._id}`, {...product, images,images2}, {
@@ -236,7 +236,7 @@ function CreateProduct() {
               type="number"
               name="shipping"
               id="shipping"
-              required
+              
               value={product.shipping}
               onChange={handleChangeInput}
             />

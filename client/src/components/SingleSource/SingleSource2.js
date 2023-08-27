@@ -13,7 +13,7 @@ const SingleSource = ({ src }) => {
   return (
     <div className="zoom3">
       <Image
-       
+        
         zoomed={zoomed}
         src={src}
         onClick={() => setZoomed(true)}

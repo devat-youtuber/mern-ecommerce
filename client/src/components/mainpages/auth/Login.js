@@ -43,8 +43,7 @@ function Login() {
             </form>
            
         
-        <div>
-            <img className="portal" src='/images/sheild2.gif' alt=""/></div></div>
+        </div>
     ) 
 }
 
