@@ -1,0 +1,104 @@
+.contact{
+    height:500px !important;
+    padding: 10px;
+}
+.contact_input_text1{
+    height:500px !important;
+    padding: 10px;
+}
+
+.Contact-form {
+    display: flex;
+    flex-direction: column;
+    margin: 0 auto 0;
+    text-align: center;
+    padding-bottom: 1%;
+    background-color: #3f51b593;
+    width: 60%;
+    
+   
+}
+.contact-form1 {
+    display: flex;
+    flex-direction: column;
+    margin: 0 auto 0;
+    
+    text-align: center;
+    padding-bottom: 1%;
+    background-color: #3f51b593;
+    width: 50%;
+    
+   
+}
+
+.submit{
+    background-color: #3f51b593;
+    width:30%;
+    margin: 0 auto;
+}
+
+.contact-form-header {
+    font-size: 2.5rem;
+    padding: 1%;
+    font-family: 'Raleway', sans-serif;
+    color: black;
+}
+
+.contact_input {
+    padding-left: 10%;
+    padding-right: 10%;
+    
+}
+
+.contact_input_text1 {
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 1.5rem;
+    border: 1px solid black;
+    border-radius: 5%;
+    text-align: center;
+    background: transparent;
+    color: black;
+    min-height: 6.5vh;
+    width: 100%;
+    margin-bottom:3.5px;
+}
+
+.contact_input_text {
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 1.5rem;
+    border: 1px solid black;
+    border-radius: 5%;
+    text-align: center;
+    background: transparent;
+    color: black;
+    min-height: 7.5vh;
+    
+    
+    
+}
+
+.contact_success_modal_body {
+    text-align: center;
+    background: #090909;
+    color: aliceblue;
+    
+}
+
+.contact_success_modal_img {
+    height: 15vh;
+    padding-bottom: 3%;
+}
+
+button.contact-email-text-btn:hover {
+    background: #3f51b5;
+    color: black;
+}
+
+button.contact-email-text-btn{
+    width: 30%;
+    border: 1px solid;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto;
+}

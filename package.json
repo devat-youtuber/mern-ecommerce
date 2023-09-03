@@ -18,6 +18,7 @@
   "license": "ISC",
   "dependencies": {
     "bcrypt": "^5.0.0",
+    "bootstrap": "^5.1.0",
     "cloudinary": "^1.23.0",
     "concurrently": "^5.3.0",
     "cookie-parser": "^1.4.5",
@@ -26,7 +27,10 @@
     "express": "^4.17.1",
     "express-fileupload": "^1.2.0",
     "jsonwebtoken": "^8.5.1",
-    "mongoose": "^5.10.1"
+    "mongoose": "^5.10.1",
+    "react-bootstrap": "^2.0.0-beta.6",
+    "react-medium-image-zoom": "^4.3.5",
+    "react-paypal-button-v2": "^2.6.3"
   },
   "devDependencies": {
     "nodemon": "^2.0.4"

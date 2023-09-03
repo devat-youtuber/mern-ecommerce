@@ -41,7 +41,8 @@ function Header() {
 
 
     const styleMenu = {
-        left: menu ? 0 : "-100%"
+        right: menu ? 0 : "-105%",
+        
     }
 
     return (
@@ -52,12 +53,15 @@ function Header() {
 
             <div className="logo">
                 <h1>
-                    <Link to="/">{isAdmin ? 'Admin' : 'DevAT Shop'}</Link>
+                    <Link to="/">{isAdmin ? 'Admin' : '4JM Custom Designs'}</Link>
                 </h1>
             </div>
 
             <ul style={styleMenu}>
-                <li><Link to="/">{isAdmin ? 'Products' : 'Shop'}</Link></li>
+                 <li><Link to="/">{isAdmin ? 'Products' : 'Shop'}</Link></li>
+                <li><Link to="/services">{isAdmin ? 'Services' : 'Services'}</Link></li>
+                <li><Link to="/contact">{isAdmin ? 'Contact' : 'Contact'}</Link></li>
+               
 
                 {isAdmin && adminRouter()}
 

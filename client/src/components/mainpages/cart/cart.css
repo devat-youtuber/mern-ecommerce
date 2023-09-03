@@ -2,6 +2,9 @@
     position: relative;
     border: 1px solid #ccc;
     transform: scaleY(0.98);
+    height:auto;
+    text-align: center;
+   
 }
 .amount span{
     color: crimson;
@@ -21,12 +24,16 @@
     cursor: pointer;
 }
 .total{
-    width: 100%;
-    height: 50px;
+    margin: 0 auto;
+    font-weight:bold;
     display: flex;
-    align-items: center;
-    justify-content: space-between;
+    flex-direction: column;
+    
+
+    
+    
 }
 .total h3{
-    color: crimson;
+    color: black;
 }
+

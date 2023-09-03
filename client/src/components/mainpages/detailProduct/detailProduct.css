@@ -1,5 +1,5 @@
 .detail{
-    width: 100%;
+    
     display: flex;
     justify-content: space-around;
     flex-wrap: wrap;
@@ -7,15 +7,19 @@
     font-size: 150%;
 }
 .detail img{
-    max-width: 400px;
-    width: 100%;
+    max-width: 550px;
+    height: 350px;
     margin: 20px;
-    height: 450px;
+    
     object-fit: cover;
     display: block;
 }
 .box-detail{
+    display: flex;
+    flex-direction: column;
+    align-items:center;
     max-width: 500px;
+    
     width: 100%;
     margin: 5px 20px;
 }
@@ -31,16 +35,96 @@
     font-weight: 2rem;
 }
 .box-detail p{
+    font-weight:bold;
     line-height: 1.5;
     margin: 10px 0;
     opacity: 0.8;
 }
-.box-detail .cart{
+/* .box-detail .cart{
+    
+    
     background: #333;
     color: white;
     margin-top: 10px;
     padding: 10px 25px;
-    display: inline-block;
+ 
     text-transform: uppercase;
     letter-spacing: 2px;
+} */
+
+/* .button{
+    font-size: 1.2rem;
+     height: 50px;
+     padding: 10px 25px;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    align-items: center;
+    background: #333;
+    color: white;
+    
+     transform: scaleY(0.98);
+} */
+
+.nav-link{
+    color: white;
+}
+
+.contact-form{
+   display:flex;
+   flex-direction:column;
+   justify-content:center;
+   width:250px;
+    
+    
+}
+
+.modal-content{
+    display:flex;
+    align-items:center;
+}
+
+.modal-body{
+    
+    display:flex;
+    justify-content:center;
+    margin:0 auto;
+}
+
+a.cart {
+    /* display:flex; */
+    text-align:center;
+    width: 28%;
+    height: 8.5%;
+    border: 1px solid black;
+    border-radius:2px;
+    color: white;
+    background-color: #3f51b5;
+    text-decoration: none;
+}
+a.cart:hover{
+    color: black;
+    
+}
+
+button.btn.btn-primary{
+    background-color: #3f51b5;
+}
+
+button.btn.btn-primary:hover{
+    color:black;
+    background-color: #3f51b5;
+     
+}
+.subject1{
+    text-transform: uppercase;
+    font-size: small;
+}
+.send{
+    background-color:#3f51b5;
+    color:white;
+}
+@media (max-width: 500px) {
+.detail.cart{
+    height:175vh;
+}
 }

@@ -3,15 +3,27 @@
   "version": "0.1.0",
   "private": true,
   "dependencies": {
+    "@paypal/react-paypal-js": "^7.3.2",
     "@testing-library/jest-dom": "^4.2.4",
     "@testing-library/react": "^9.5.0",
     "@testing-library/user-event": "^7.2.1",
     "axios": "^0.20.0",
+    "bootstrap": "^5.1.0",
+    "emailjs-com": "^3.2.0",
+    "focus-trap-react": "^8.7.1",
     "react": "^16.13.1",
+    "react-bootstrap": "^1.6.1",
     "react-dom": "^16.13.1",
+    "react-gesture-responder": "^2.1.0",
+    "react-image-enlarger": "^1.1.0",
+    "react-modal": "^3.14.3",
+    "react-modal-image": "^2.5.0",
+    "react-paypal-button-v2": "^2.6.3",
     "react-paypal-express-checkout": "^1.0.5",
     "react-router-dom": "^5.2.0",
-    "react-scripts": "3.4.3"
+    "react-scripts": "3.4.3",
+    "reactstrap": "^8.9.0",
+    "sweetalert2": "^11.1.4"
   },
   "scripts": {
     "start": "react-scripts start",

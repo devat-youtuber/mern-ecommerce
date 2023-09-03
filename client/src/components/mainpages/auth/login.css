@@ -1,14 +1,16 @@
 .login-page{
     max-width: 500px;
+    
     border: 2px solid rgb(3, 165, 206);
     border-radius: 5px;
     padding: 30px;
     margin: 50px auto;
+   background-color:rgb(63, 60, 60);
 }
 .login-page h2{
     text-transform: uppercase;
     letter-spacing: 2px;
-    color: #555;
+    color: black;
 }
 .login-page form input,
 .login-page form button{
@@ -35,4 +37,11 @@
     color: orange;
     letter-spacing: 1.3px;
     text-transform: uppercase;
+}
+
+.portal{
+    display:flex;
+    justify-content: center;
+    margin:0 auto;
+    width:50%;
 }
